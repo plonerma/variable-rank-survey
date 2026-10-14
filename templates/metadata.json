@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Variable-Rank Adaptation: A Comprehensive Survey of Rank Budgeting LoRA Variants",
+  "alternateName": "Variable-Rank Adaptation Survey",
+  "description": "This work presents a taxonomy of variable-rank LoRA methods, categorizing them into rank pruning, growth, redistribution, and pre-allocation based on common design dimensions. It also discusses their theoretical and practical characteristics while identifying key barriers to broader adoption, particularly the lack of standardized evaluations and consistent memory metrics.",
+  "author": [
+      {
+        "@type": "Person",
+        "name": "Max Ploner",
+        "familyName": "Ploner",
+        "givenName": "Max",
+        "url": "https://maxploner.de",
+        "affiliation": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Humboldt-Universität zu Berlin",
+            "url": "https://www.hu-berlin.de/"
+          },
+          {
+            "@type": "ResearchOrganization",
+            "name": "Science of Intelligence",
+            "url": "https://www.scienceofintelligence.de/"
+          }
+        ],
+        "sameAs": [
+          "https://maxploner.de/#me",
+          "https://orcid.org/0009-0007-4593-2353"
+        ]
+      },
+      {
+        "@type": "Person",
+        "name": "Alan Akbik",
+        "familyName": "Akbik",
+        "givenName": "Alan",
+        "url": "https://alanakbik.github.io/",
+        "affiliation": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Humboldt-Universität zu Berlin",
+            "url": "https://www.hu-berlin.de/"
+          },
+          {
+            "@type": "ResearchOrganization",
+            "name": "Science of Intelligence",
+            "url": "https://www.scienceofintelligence.de/"
+          }
+        ]
+      }
+    ],
+    "datePublished": "2026",
+    "url": "/",
+    "image": "https://YOUR_DOMAIN.com/static/images/preview.png",
+    "keywords": ["Low-rank adaptation", "LoRA", "Variable-rank methods", "Parameter-efficient fine-tuning", "PEFT", "Rank allocation", "Rank growth", "Rank pruning", "Rank redistribution", "Rank pre-allocation", "Memory efficiency", "Reparametrization", "Fine-tuning", "Model compression", "Training efficiency", "Inference efficiency", "multi- tenant setup"],
+
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "ScholarlyArticle",
+      "@id": "https://https://aclanthology.org/PAPER",
+      "url": "https://https://aclanthology.org/PAPER",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Association for Computational Linguistics"
+      },
+      "datePublished": "2026",
+      "sameAs": "<DOI url>",
+      "inLanguage": "en",
+      "abstract": "The capacity of Low-Rank Adaptation (LoRA) is fundamentally governed by its rank parameter. While standard implementations apply a uniform rank across all layers, a recent wave of variable-rank extensions demonstrates that tailoring ranks to module importance improves expressiveness. However, this emerging literature remains highly fragmented and lacks systematic cross-comparisons. To unify the field, we propose a taxonomy grouping these approaches into four categories: Rank growth, pruning, redistribution, and pre-allocation. We analyze their design dimensions, theoretical expressiveness, implementation complexity, and memory efficiency. Finally, we outline critical challenges inhibiting adoption, including standardized evaluations and memory metrics.",
+      "citation": "BIBTEX_CITATION_HERE",
+      "description": "This work presents a taxonomy of variable-rank LoRA methods, categorizing them into rank pruning, growth, redistribution, and pre-allocation based on common design dimensions. It also discusses their theoretical and practical characteristics while identifying key barriers to broader adoption, particularly the lack of standardized evaluations and consistent memory metrics.",
+      "name": "Variable-Rank Adaptation: A Comprehensive Survey of Rank Budgeting LoRA Variants",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Max Ploner",
+          "familyName": "Ploner",
+          "givenName": "Max",
+          "affiliation": [
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "Humboldt-Universität zu Berlin",
+              "url": "https://www.hu-berlin.de/"
+            },
+            {
+              "@type": "ResearchOrganization",
+              "name": "Science of Intelligence",
+              "url": "https://www.scienceofintelligence.de/"
+            }
+          ]
+        },
+        {
+          "@type": "Person",
+          "name": "Alan Akbik",
+          "familyName": "Akbik",
+          "givenName": "Alan",
+          "affiliation": [
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "Humboldt-Universität zu Berlin",
+              "url": "https://www.hu-berlin.de/"
+            },
+            {
+              "@type": "ResearchOrganization",
+              "name": "Science of Intelligence",
+              "url": "https://www.scienceofintelligence.de/"
+            }
+          ]
+        }
+      ],
+      "isPartOf": {
+        "@type": "Book",
+        "name": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+        "subjectOf": {
+          "@type": "ConferenceEvent",
+          "name": "The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+          "workFeatured": {
+            "@id": "https://https://aclanthology.org/PAPER"
+          }
+        }
+      }
+    }
+  }

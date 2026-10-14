@@ -1,0 +1,78 @@
+{% extends "_detail-page.html" %}
+
+
+{% block content %}
+{{ detail_header("/papers") }}
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <table class="table is-fullwidth paper-details">
+        <tr>
+          <th scope="row" style="vertical-align: middle;">Title</th>
+          <td style="vertical-align: middle;"><h2 class="title has-text-centered">{{ paper.title }}</h2></td>
+        </tr>
+        <tr>
+          <th scope="row">Authors</th>
+          <td class="has-text-centered">
+            {% for author in paper.author %}
+            {{ author.full }}{%if not loop.last %}, {% endif %}
+            {% endfor %}
+          </td>
+        </tr>
+        <tr>
+          {% if paper.DOI %}
+          <th scope="row" style="vertical-align: middle;">DOI</th>
+          <td class="has-text-centered" style="vertical-align: middle;">
+            <a href="{{paper.DOI | doi_url}}" class="button is-warning is-round is-small">{{paper.DOI | url_path}}</a>
+          </td>
+          {% elif paper.URL %}
+          <th scope="row" style="vertical-align: middle;">Link</th>
+          <td class="has-text-centered" style="vertical-align: middle;">
+            <a href="{{paper.URL}}" class="button is-link is-inverted is-round is-small">{{ paper.URL | url_domain }}</a>
+          </td>
+          {% endif %}
+
+        </tr>
+        <tr>
+          <th scope="row">Year</th>
+          <td class="has-text-centered">{{ paper.year }}</td>
+        </tr>
+        {% if paper["container-title"] %}
+        <tr>
+          <th scope="row">Published In</th>
+          <td class="has-text-centered">{{ paper["container-title"] }}</td>
+        </tr>
+        {% endif %}
+        <tr>
+          <th scope="row">Methods</th>
+          <td class="has-text-centered method-cell">
+            {% for method in paper.methods %}
+              <a href="{{method.url}}">{{method.name}}</a>
+            {% endfor %}
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Abstract</th>
+          <td><p class="has-text-weight-light has-text-justified">{{ paper.abstract }}</p></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<style>
+
+table.paper-details th {
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+table.paper-details td.method-cell a:not(:last-child)::after {
+  content: ", ";
+}
+
+
+</style>
+
+{% endblock %}

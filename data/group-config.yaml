@@ -1,0 +1,69 @@
+
+dimensions:
+  granularity: Granularity
+  "selection criterion": "Selection Criterion"
+  reparametrization: "Parametrization"
+  orthonormalization: "Orthonormalization"
+  sparsity induction: "Sparsity"
+  initialization: "Initialization"
+  "redistribution mode": "Redistribution Mode"
+  selection source: "Information Source"
+  "search algorithm": "Search Algorithm"
+  "base model compression": "Base Model Compression"
+
+groups:
+  "pruning_mid-tuning":
+    name: "Mid-Tuning Rank Pruning"
+    dimensions:
+      - granularity
+      - "selection criterion"
+      - reparametrization
+      - orthonormalization
+      - "sparsity induction"
+      - "base model compression"
+
+  "pruning_post-tuning":
+    name: "Post-Tuning Rank Pruning"
+    dimensions:
+      - granularity
+      - "selection criterion"
+      - reparametrization
+      - orthonormalization
+      - "sparsity induction"
+      - "base model compression"
+
+  growth:
+    name: "Rank Growth"
+    dimensions:
+      - granularity
+      - "selection criterion"
+      - reparametrization
+      - orthonormalization
+      - initialization
+      - "base model compression"
+
+  "redistribution":
+    name: "Rank Redistribution"
+    dimensions:
+      - granularity
+      - "selection criterion"
+      - "redistribution mode"
+      - "reparametrization"
+      - "base model compression"
+
+  pre-allocation_one-off:
+    name: "One-off Rank Pre-allocation"
+    dimensions:
+    - granularity
+    - "information source"
+    - "selection criterion"
+    - initialization
+    - "base model compression"
+
+  "pre-allocation_iterative":
+    name: Iterative Rank Pre-allocation
+    dimensions:
+      - granularity
+      - "search algorithm"
+      - "base model compression"
+

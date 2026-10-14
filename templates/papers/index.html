@@ -1,0 +1,63 @@
+{% extends "_detail-page.html" %}
+
+{% block content %}
+{{ detail_header("/") }}
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <table id="papers" class="table is-fullwidth sortable-table">
+        <caption class="mb-4">This table includes all publications included in the paper. Click on a publication to go to its detail page. Click on a paper to get more details.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Authors</th>
+            <th scope="col">Year</th>
+            <th scope="col">Title</th>
+          <tr>
+        </thead>
+        <tbody>
+          {% for paper in survey_data.papers.values() %}
+          <tr>
+            <td>
+              <a href="{{paper["url"]}}">{{paper.authors_short}}</a>
+            </td>
+            <td>
+              <a href="{{paper["url"]}}">{{paper.year}}</a>
+            </td>
+            <td>
+              <a href="{{paper["url"]}}">{{paper.title}}</a>
+            </td>
+          </tr>
+          
+          {% endfor %}
+        </tbody>
+      </table>
+
+<style>
+#papers a {
+  color: var(--primary-color);
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+#papers a:hover {
+  color: var(--primary-hover);
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+</style>
+
+      <button class="button is-normal is-rounded is-dark">
+        <span class="icon">
+          <i class="bi bi-filetype-json"></i>
+        </span>
+        <span>Download paper data</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

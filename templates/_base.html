@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="{{ metadata.name }}">
+
+  <meta name="description" content="{{ metadata.description }}">
+  <meta name="keywords" content="{{ metadata.keywords | join(",")}}">
+  <meta name="author" content="{% for author in metadata.author %}{{ author.name }}{% if not loop.last %}, {% endif %}{% endfor %}">
+
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="{{ metadata.author[0].affiliation[0].name }}">
+  <meta property="og:title" content="{{ metadata.name }}">
+  <meta property="og:description" content="{{ metadata.description }}">
+  <meta property="og:url" content="{{ metadata.url }}">
+
+  <meta property="og:image" content="{{ metadata.image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ metadata.name }} - Research Preview">
+  <meta property="article:published_time" content="{{ metadata.datePublished }}">
+  {% for author in metadata.mainEntity.author %}<meta property="article:author" content="{{ author.familyName }}, {{ author.givenName }}">{% endfor %}
+  {% for keyword in metadata.mainEntity.keywords %}<meta property="article:tag" content="{{ keyword }}">{% endfor %}
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ metadata.name }}">
+  <meta name="twitter:description" content="{{ metadata.description }}">
+  <meta name="twitter:image" content="{{ metadata.image }}">
+  <meta name="twitter:image:alt" content="{{ metadata.name }} - Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="{{ metadata.mainEntity.title }}">
+  {% for author in metadata.mainEntity.author %}<meta name="citation_author" content="{{ author.familyName }}, {{ author.givenName }}">{% endfor %}
+  <meta name="citation_publication_date" content="{{ metadata.mainEntity.title }}">
+  <meta name="citation_date" content="{{ metadata.mainEntity.datePublished }}">
+  <meta name="citation_pdf_url" content="{{ metadata.mainEntity.url }}">
+  <meta name="citation_doi" content="{{ metadata.mainEntity.sameAs }}">
+  <meta name="citation_inbook_title" content="{{ metadata.mainEntity.isPartOf.name }}">
+  <meta name="citation_abstract" content="{{ metadata.mainEntity.abstract }}">
+  <meta name="citation_language" content="{{ metadata.mainEntity.inLanguage }}">
+  <meta name="citation_conference_title" content="{{ metadata.mainEntity.isPartOf.subjectOf.name }}">
+  <meta name="citation_publisher" content="{{ metadata.mainEntity.publisher.name }}">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#00376c">
+  <meta name="msapplication-TileColor" content="#00376c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>{{metadata.name}}</title>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="/static/images/favicon.ico">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="/static/css/bulma.min.css">
+  <link rel="stylesheet" href="/static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <link href="/static/fonts/inter.css" rel="stylesheet" />
+
+
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource-variable/inter@5.3.0/index.css" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script src=" https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js "></script>
+  <script defer src="/static/js/index.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.0/dist/katex.min.css" integrity="sha384-3rdsX6e5mueWyoweR9NIVmtEsUkokpBT/0ALqKKIBMr9j4qhHkaIkAcGgsE6uVlp" crossorigin="anonymous">
+
+  <!-- The loading of KaTeX is deferred to speed up page rendering -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.0/dist/katex.min.js" integrity="sha384-QFFtAGzvvj+bfgCGxXJlNZZR1nXEZgvG8tDLCCY1F19xl20WlfTYgguB4VcNdxYk" crossorigin="anonymous"></script>
+
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <script
+    defer src="https://cdn.jsdelivr.net/npm/katex@0.19.0/dist/contrib/auto-render.min.js"
+    integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz"
+    crossorigin="anonymous"
+    onload="renderMathInElement(document.body, { delimiters: [ {left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\(', right: '\\)', display: false}, {left: '\\[', right: '\\]', display: true} ],});"></script>
+
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {% include "metadata.json" %}
+  </script>
+</head>
+
+<body data-theme="light" style="min-height: 100vh;display: flex;flex-direction: column;">
+{% macro author_spans() %}
+  {% for author in metadata.author %}
+    {% if author.url %}
+      <span class="author-span"><a href="{{author.url}}" target="_blank">{{author.name}}</a>{% if not loop.last %},{% endif %}
+    {% else %}
+      <span class="author-span">{{author.name}}{% if not loop.last %},{% endif %}
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+
+{% macro affiliation_spans() %}
+  {% for affiliation in metadata.affiliations %}
+    {% if affiliation.url %}
+        <span class="affiliation-span"><a href="{{affiliation.url}}" target="_blank">{{affiliation.name}}</a>{% if not loop.last %}<br>{% endif %}
+    {% else %}
+        <span class="affiliation-span">{{affiliation.name}}{% if not loop.last %}<br>{% endif %}
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+  <!-- More Works Dropdown -->
+  <div class="more-works-container">
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
+      <i class="bi bi-flask"></i>
+      More Works
+      <i class="bi bi-chevron-down dropdown-arrow"></i>
+    </button>
+    <div class="more-works-dropdown" id="moreWorksDropdown">
+      <div class="dropdown-header">
+        <h4>More Works from Our Lab</h4>
+        <button class="close-btn" onclick="toggleMoreWorks()">
+          <i class="bi bi-x"></i>
+        </button>
+      </div>
+
+      <div class="works-list">
+        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Repetition over Diversity: High-Signal Data Filtering for Sample-Efficient German Language Modeling</h5>
+            <span class="work-venue">EMNLP 2026</span>
+          </div>
+          <i class="bi bi-box-arrow-up-right"></i>
+        </a>
+
+        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>What Matters When Building Universal Multilingual Named Entity Recognition Models?</h5>
+            <span class="work-venue">EMNLP 2026 (Findings)</span>
+          </div>
+          <i class="bi bi-box-arrow-up-right"></i>
+        </a>
+
+        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Can Randomly Permuting the LM Decoding Order Boost Data-Efficiency?</h5>
+            <span class="work-venue">BabyLM Workshop @ EMNLP 2026</span>
+          </div>
+          <i class="bi bi-box-arrow-up-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+<main id="main-content" style="flex: 1;display: flex;flex-direction: column;">
+{% block content required %}
+{% endblock %}
+
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built based on the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+             This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
+
+
+

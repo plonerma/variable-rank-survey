@@ -1,0 +1,63 @@
+{% extends "_detail-page.html" %}
+
+
+{% block content %}
+{{ detail_header("/methods") }}
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <table class="table is-fullwidth method-details">
+        <tr>
+          <th scope="row" style="vertical-align: middle;">Name</th>
+          <td style="vertical-align: middle;"><h2 class="title has-text-centered">{{ method.name }}</h2></td>
+        </tr>
+        <tr>
+          <th scope="row">Paper</th>
+          <td class="has-text-centered">
+            {% set paper = survey_data.papers[method["paper-id"]] %}
+            <a href="{{ paper.url }}">{{ paper.authors_short }} ({{ paper.year }}): {{paper.title}}</a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Group</th>
+          <td class="has-text-centered"><a href="/methods/#{{ method.group.id }}">{{ method.group.name }}</td>
+        </tr>
+        {% for dimension in method.group.dimensions %}
+        <tr>
+          <th scope="row">{{survey_data.group_config.dimensions[dimension]}}</th>
+          <td class="has-text-centered">{{ method[dimension] }}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+          <th scope="row" style="vertical-align: middle;">Code Repository</th>
+          <td class="has-text-centered">
+            {% if method["code url"] %}
+            <a href="{{method['code url']}}">{{ method["code url"] | url_domain }}</a>
+            {% if method["code available"] != "yes"%}<br><i>(insufficent to reproduce)</i>{% endif %}
+            {% else %}
+            <i>not available</i>
+            {% endif %}
+          </td>
+        </tr>
+        {% if method.comment %}
+        <tr>
+          <th scope="row">Comment</th>
+          <td class="has-text-centered">{{ method.comment }}</td>
+        </tr>
+        {% endif %}
+      </table>
+    </div>
+  </div>
+</section>
+
+<style>
+
+table.method-details th {
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+</style>
+
+{% endblock %}

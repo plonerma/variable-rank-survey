@@ -1,0 +1,49 @@
+{% extends "_detail-page.html" %}
+
+{% block content %}
+{{ detail_header("/") }}
+
+<h2 class="has-text-centered title">Method Groups</h2>
+
+{% for group_key, group in survey_data.group_config.groups.items() %}
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h3 class="title" id="{{group.id}}">{{ group.name }} ({{group.methods | length }})</h3>
+      <table class="table is-fullwidth sortable-table methods-table is-striped">
+        <thead>
+          <th scope="col">Method</th>
+          <th scope="col">Paper</th>
+          <th scope="col">Year</th>
+          {% for dimension in group.dimensions %}
+          <th scope="col">{{survey_data.group_config.dimensions[dimension]}}</th>
+          {% endfor %}
+        </thead>
+        <tbody>
+          {% for method in group.methods %}
+          <tr>
+            <td><a href="{{ method.url }}">{{method.name}}</a></td>
+            <td><a href="{{ method.paper.url }}">{{method.paper.authors_short}}</a></td>
+            <td><a href="{{ method.paper.url }}">{{method.paper.year}}</a></td>
+            {% for dimension in group.dimensions %}
+            <td>{{ method[dimension] }}</td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+<style>
+table.methods-table {
+  font-size: 0.9em;
+  max-height: 80v;
+  overlow: scoll;
+  display: inline-block;
+}
+</style>
+
+{% endblock %}
