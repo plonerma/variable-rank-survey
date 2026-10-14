@@ -35,4 +35,8 @@ The webpage is defined via the jinja templates in the `templates` directory as w
 
 Run `uv run scripts/build.py` to build the static HTML files.
 
-Use `cd build; uv run --no-project -m http.server` to run a development server.
+#### Local Testing
+
+Run `uv run scripts/build.py -l -r` to build the static HTML files: `-l` sets the URL to `/` and `-r` lets the script watch the template directory for changes.
+
+In the build directory, use `uv run --no-project -m http.server` to run a development server (add a link to the static files in the build directory: `ln -s ../static`).

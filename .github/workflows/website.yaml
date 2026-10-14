@@ -25,7 +25,7 @@ jobs:
         run: uv run ./scripts/build.py
 
       - name: Copy Static Files
-        run: cp static ./build
+        run: cp -r static ./build
 
       - name: Setup Pages
         uses: actions/configure-pages@v6

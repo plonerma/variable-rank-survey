@@ -124,10 +124,19 @@ if __name__ == "__main__":
         help="watch for changes and rebuild page when changes have been detected"
     )
 
+    parser.add_argument(
+        "-l", "--local", action="store_true",
+        help="set metadata url to `/` for local testing."
+    )
+
     args = parser.parse_args()
     
     # Load data
     metadata = load_metadata()
+
+    if args.local:
+        metadata["url"] = "/"
+
     survey_data = load_survey_data()
 
     site = Site.make_site(
