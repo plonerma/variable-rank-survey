@@ -18,7 +18,7 @@ The repository contains the **survey data** (`data`) as well as files to build t
     ├── papers.json  (papers exported from within Zotero)
     └── ...
 ├── scripts
-    ├── buiild.py (scripts to build the web page)
+    ├── build.py (scripts to build the web page)
     └── extract-methods.py (scripts to extract method notes from Zotero)
 ├── static (static files used on the web page)
 ├── templates (templates used for building the web page)
