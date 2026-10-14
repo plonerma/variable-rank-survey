@@ -44,7 +44,7 @@ def render_method_details(site, template, **kw):
         template.stream(method=method, **kw).dump(str(out), encoding="utf-8")
 
 
-def load_survey_data():
+def load_survey_data(metadata):
     with open(PAPERS_PATH) as f:
         papers = json.load(f)
 
@@ -66,7 +66,7 @@ def load_survey_data():
         else:
             paper["authors_short"] = " & ".join(map(lambda a: a["short"], paper["author"]))
 
-        paper["url"] = f"/papers/{paper['id'].lower()}.html"
+        paper["url"] = f"{metadata['url']}papers/{paper['id'].lower()}.html"
         paper["year"] = paper["issued"]["date-parts"][0][0]
         paper["methods"] = []
         
@@ -77,7 +77,7 @@ def load_survey_data():
         group["id"] = slugify(group["name"])
 
     for method in methods:
-        method["url"] = f"/methods/{method['id']}.html"
+        method["url"] = f"{metadata['url']}methods/{method['id']}.html"
         method["paper"] = papers[method["paper-id"]]
         papers[method["paper-id"]]["methods"].append(method)
 
@@ -137,7 +137,7 @@ if __name__ == "__main__":
     if args.local:
         metadata["url"] = "/"
 
-    survey_data = load_survey_data()
+    survey_data = load_survey_data(metadata)
 
     site = Site.make_site(
         # Make the data available in all templates
