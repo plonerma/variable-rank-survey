@@ -16,6 +16,10 @@ jobs:
 
       - name: Install uv
         uses: astral-sh/setup-uv@v10.3.0
+        with:
+          enable-cache: true
+          # Decide whether to invalidate the uv cache based on the script
+          cache-dependency-glob: scripts/build.py
 
       - name: Build Page
         run: uv run ./scripts/build.py
@@ -24,6 +28,7 @@ jobs:
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
+        path: ./build
 
   deploy:
     name: Deploy Page
