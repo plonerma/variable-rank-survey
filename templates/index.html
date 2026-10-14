@@ -59,29 +59,29 @@
       <p class="mb-6 has-text-justified">{{ metadata.description }}</p>
 
       <div class="columns main-illustrations">
-        <a class="column is-half" href="/methods#mid-tuning-rank-pruning" style="display: block;">
+        <a class="column is-half" href="{{metadata.url}}methods#mid-tuning-rank-pruning" style="display: block;">
           <figure class="image box">
-            <img src="static/images/illustrations/illustration-pruning.svg" alt="Illustration of rank pruning: After a training period (using a rank layout initialized with a relatively high uniform rank), ranks are selected, and pruned. In mid-training pruning, the training then continues, while in post-tuning pruning, pruning happens only after training.">
+            <img src="{{metadata.url}}static/images/illustrations/illustration-pruning.svg" alt="Illustration of rank pruning: After a training period (using a rank layout initialized with a relatively high uniform rank), ranks are selected, and pruned. In mid-training pruning, the training then continues, while in post-tuning pruning, pruning happens only after training.">
             <figcaption>Rank Pruning</figcaption>
             </figure>
         </a>
-        <a class="column is-half" href="/methods#rank-growth" style="display: block;">
+        <a class="column is-half" href="{{metadata.url}}methods#rank-growth" style="display: block;">
           <figure class="image box">
-            <img src="static/images/illustrations/illustration-growth.svg" alt="Illustration of rank growth: Starting with a low uniform rank (0 or 1), the model undergoes a repeated cycle of training, modules selection, and rank expansion.">
+            <img src="{{metadata.url}}static/images/illustrations/illustration-growth.svg" alt="Illustration of rank growth: Starting with a low uniform rank (0 or 1), the model undergoes a repeated cycle of training, modules selection, and rank expansion.">
             <figcaption>Rank Growth</figcaption>
           </figure>
         </a>
       </div>
       <div class="columns main-illustrations">
-        <a class="column is-half" href="/methods#rank-redistribution" style="display: block;">
+        <a class="column is-half" href="{{metadata.url}}methods#rank-redistribution" style="display: block;">
           <figure class="image box">
-            <img src="static/images/illustrations/illustration-redistribution.svg" alt="Illustration of rank redistribution: The process is similar to rank growth combined with mid-tuning pruning; some ranks are removed while new ranks are added to other modules. The process is repeated multiple times to derive a variable-rank layout.">
+            <img src="{{metadata.url}}static/images/illustrations/illustration-redistribution.svg" alt="Illustration of rank redistribution: The process is similar to rank growth combined with mid-tuning pruning; some ranks are removed while new ranks are added to other modules. The process is repeated multiple times to derive a variable-rank layout.">
             <figcaption>Rank Redistribution</figcaption>
           </figure>
         </a>
-        <a class="column is-half" href="/methods#one-off-rank-pre-allocation" style="display: block;">
+        <a class="column is-half" href="{{metadata.url}}methods#one-off-rank-pre-allocation" style="display: block;">
           <figure class="image box">
-            <img src="static/images/illustrations/illustration-preallocation.svg" alt="Illustration of rank pre-allocation: Based on some metrics, the layout is initialized with a variable-rank layout before it is trained. In the iterative variant, information from previous training runs may be used to inform the next rank layout.">
+            <img src="{{metadata.url}}static/images/illustrations/illustration-preallocation.svg" alt="Illustration of rank pre-allocation: Based on some metrics, the layout is initialized with a variable-rank layout before it is trained. In the iterative variant, information from previous training runs may be used to inform the next rank layout.">
             <figcaption>Rank Pre-Allocation</figcaption>
           </figure>
         </a>
@@ -100,7 +100,7 @@
 
       <div class="columns">
         <div class="column is-half">
-          <a class="box has-text-centered is-size-5" href="/papers">
+          <a class="box has-text-centered is-size-5" href="{{metadata.url}}papers">
             <span class="icon">
               <i class="bi bi-file-earmark-text"></i>
             </span>
@@ -108,7 +108,7 @@
           </a>
         </div>
         <div class="column is-half">
-          <a class="box has-text-centered is-size-5" href="/methods">
+          <a class="box has-text-centered is-size-5" href="{{metadata.url}}methods">
             <span class="icon">
               <i class="bi bi-grid-3x2-gap-fill"></i>
             </span>
@@ -142,7 +142,7 @@
       <div class="is-centered has-text-centered">
         <h2 class="title">Taxonomy</h2>
         <figure class="image">
-          <object data="static/images/illustrations/variable-rank-taxonomy.svg" style="width: 800px; max-width: 100%">Taxonomy of the variable-rank method groups</object>
+          <object data="{{metadata.url}}static/images/illustrations/variable-rank-taxonomy.svg" style="width: 800px; max-width: 100%">Taxonomy of the variable-rank method groups</object>
           <figcaption>Taxonomy of the <a href="/methods">variable-rank method groups</a>. Classes in blue from <a herf="http://arxiv.org/abs/2303.15647" target="_blank">Lialin et al. (2023)</a>, in red from <a href="https://arxiv.org/abs/2601.22708" target="_blank">He et al. (2026)</a>.</figcaption>
         </figure>
       </div>
@@ -159,7 +159,7 @@
       <div class="is-centered has-text-centered">
         <h2 class="title">Workflow and Artefacts</h2>
         <figure class="image">
-          <object data="static/images/illustrations/variable-rank-data-illustration.svg" style="width: 600px; max-width: 100%">Illustration of the produced artefacts</object>
+          <object data="{{metadata.url}}static/images/illustrations/variable-rank-data-illustration.svg" style="width: 600px; max-width: 100%">Illustration of the produced artefacts</object>
           <figcaption>
           We collect all relevant papers in <a href="https://www.zotero.org/" target="_black">Zotero</a>, describe all proposed methods (including respective design choices) using notes, and mark evaluation tables in the papers (as annotations).
           We then export these information to create the method tables and to extract evaluation results using a vision-language model.
