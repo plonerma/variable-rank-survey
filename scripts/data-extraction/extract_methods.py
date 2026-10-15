@@ -25,11 +25,7 @@ from slugify import slugify
 from zotero import ZoteroInterface
 
 
-URL = "http://127.0.0.1:23119/better-bibtex/export?/library;name:My%20Library/collection/Variable-rank%20Adaptation/Methods.jzon"
-
-SELECT_URL = "zotero://select/library/items/{item_key}"
 TAG = "Variable-Rank Method"
-
 
 
 console = Console()

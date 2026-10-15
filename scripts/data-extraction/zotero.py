@@ -9,15 +9,18 @@ class ZoteroInterface():
 
     @classmethod
     def select_link(cls, item=None, itemKey: str | None = None):
+        """https://stackoverflow.com/a/71309268"""
         if itemKey is None:
             assert item is not None
             itemKey = item["item-key"]
         selectURL = cls.SELECT_URL.format(itemKey=itemKey)
 
         text = itemKey
-        return f"[link={selectURL}]{text}[/link]"
 
+        # OSC 8 ; params ; URI ST <name> OSC 8 ;; ST
+        escape_mask = '\033]8;{};{}\033\\{}\033]8;;\033\\'
 
+        return escape_mask.format("", selectURL, text)
 
     @classmethod
     def get_all_items(cls):
@@ -70,43 +73,6 @@ class ZoteroInterface():
             raise RuntimeError(msg)
 
 
-    @classmethod
-    def get_annotation_tree(cls):
-        pdf_items = {}
 
-        for item in cls.get_items(itemType="annotation"):
-            if not cls.has_tag(item["data"], "results-table"):
-                continue
-
-            parentKey = item["data"]["parentItem"]
-
-            if parentKey not in pdf_items:
-                pdf = cls.get_items(parentKey)
-                paper = cls.get_items(pdf["data"]["parentItem"])["data"]
-
-
-                del paper["collections"]
-                del paper["tags"]
-                del paper["dateAdded"]
-                del paper["dateModified"]
-                del paper["relations"]
-
-                pdf_items[parentKey] = {
-                    "annotations": [],
-                    "pdf": pdf,
-                    **paper,
-                }
-
-            item_data = item["data"]
-            item_data["annotationPosition"] = json.loads(item_data["annotationPosition"])
-
-            del item_data["tags"]
-            del item_data["dateAdded"]
-            del item_data["dateModified"]
-            del item_data["relations"]
-
-            pdf_items[parentKey]["annotations"].append(item_data)
-
-        return pdf_items
 
 
