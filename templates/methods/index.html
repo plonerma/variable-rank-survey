@@ -9,40 +9,56 @@
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h3 class="title" id="{{group.id}}">{{ group.name }} ({{group.methods | length }})</h3>
-      <table class="table is-fullwidth sortable-table methods-table is-striped">
-        <thead>
-          <th scope="col">Method</th>
-          <th scope="col">Paper</th>
-          <th scope="col">Year</th>
-          {% for dimension in group.dimensions %}
-          <th scope="col">{{survey_data.group_config.dimensions[dimension]}}</th>
-          {% endfor %}
-        </thead>
-        <tbody>
-          {% for method in group.methods %}
-          <tr>
-            <td><a href="{{ method.url }}">{{method.name}}</a></td>
-            <td><a href="{{ method.paper.url }}">{{method.paper.authors_short}}</a></td>
-            <td><a href="{{ method.paper.url }}">{{method.paper.year}}</a></td>
-            {% for dimension in group.dimensions %}
-            <td>{{ method[dimension] }}</td>
-            {% endfor %}
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+      <div class="card">
+        <header class="card-header">
+          <h3 class="card-header-title title is-4" id="{{group.id}}">{{ group.name }} ({{group.methods | length }})</h3>
+        </header>
+        <div class="card-content ">
+          <div class="methods-table-container">
+            <table class="table is-fullwidth sortable-table is-striped">
+              <thead>
+                <th scope="col">Method</th>
+                <th scope="col">Paper</th>
+                <th scope="col">Year</th>
+                {% for dimension in group.dimensions %}
+                <th scope="col">{{survey_data.group_config.dimensions[dimension]}}</th>
+                {% endfor %}
+              </thead>
+              <tbody>
+                {% for method in group.methods %}
+                <tr>
+                  <td><a href="{{ method.url }}">{{method.name}}</a></td>
+                  <td><a href="{{ method.paper.url }}">{{method.paper.authors_short}}</a></td>
+                  <td><a href="{{ method.paper.url }}">{{method.paper.year}}</a></td>
+                  {% for dimension in group.dimensions %}
+                  <td>{{ method[dimension] }}</td>
+                  {% endfor %}
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 {% endfor %}
 
 <style>
-table.methods-table {
-  font-size: 0.9em;
+.methods-table-container {
   max-height: 80vh;
-  overflow: scroll;
-  display: inline-block;
+  overflow-x: scroll;
+
+  table {
+    font-size: 0.9em;
+    thead th {
+      position: sticky;
+      top: 0;
+      background: white;
+      z-index: 1;
+    }
+  }
 }
 </style>
 

@@ -669,3 +669,45 @@ figure figcaption {
   }
 }
 
+
+.sortable-table {
+  th, td {
+    padding-right: 1em;
+    padding-left: 0.5em;
+  }
+
+  th {
+    cursor: pointer;
+    position: relative;
+  }
+
+  th::after {
+    border: solid var(--primary-color);
+    border-width: 0 2pt 2pt 0;
+    display: inline-block;
+    padding: 3px;
+    content: " ";
+    display: inline-block;
+    opacity: 0;
+    transition: opacity .3s ease, transform .3s ease, border-color .3s ease;
+    transform: rotate(-135deg);
+    transform-origin: center;
+
+    position: absolute;
+    top: 1.1em;
+    right: 2px;
+  }
+
+  th:hover::after {
+    border-color: var(--primary-hover);
+  }
+
+  th:hover::after, th.sort-asc::after, th.sort-desc::after {
+    opacity: 1;
+  }
+
+  th.sort-desc::after {
+    transform: rotate(45deg)
+  }
+
+}
