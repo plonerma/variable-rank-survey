@@ -1656,12 +1656,12 @@ other-dora	yeGradientIntrinsicDimensionality2025	DoRA (Liu et al., 2024a)	LLaMA-
 other-pissa	yeGradientIntrinsicDimensionality2025	PiSSA (Meng et al., 2024)	LLaMA-3.1-8B-Base	MTBench		6.08		8		
 other-pissa	yeGradientIntrinsicDimensionality2025	PiSSA (Meng et al., 2024)	LLaMA-3.1-8B-Base	GSM8k		68.56		8		
 other-pissa	yeGradientIntrinsicDimensionality2025	PiSSA (Meng et al., 2024)	LLaMA-3.1-8B-Base			44.1		8		
-ra-lora	yeGradientIntrinsicDimensionality2025	RaLoRA (Ours)	LLaMA-3.1-8B-Base	MTBench		6.38		8		
-ra-lora	yeGradientIntrinsicDimensionality2025	RaLoRA (Ours)	LLaMA-3.1-8B-Base	GSM8k		72.25		8		
-ra-lora	yeGradientIntrinsicDimensionality2025	RaLoRA (Ours)	LLaMA-3.1-8B-Base			48.78		8		
-ra-lora	yeGradientIntrinsicDimensionality2025	RaLoRA-Pro (Ours)	LLaMA-3.1-8B-Base	MTBench		6.72		8		
-ra-lora	yeGradientIntrinsicDimensionality2025	RaLoRA-Pro (Ours)	LLaMA-3.1-8B-Base	GSM8k		73.01		8		
-ra-lora	yeGradientIntrinsicDimensionality2025	RaLoRA-Pro (Ours)	LLaMA-3.1-8B-Base			48.37		8		
+ralora-pro	yeGradientIntrinsicDimensionality2025	RaLoRA (Ours)	LLaMA-3.1-8B-Base	MTBench		6.38		8		
+ralora-pro	yeGradientIntrinsicDimensionality2025	RaLoRA (Ours)	LLaMA-3.1-8B-Base	GSM8k		72.25		8		
+ralora-pro	yeGradientIntrinsicDimensionality2025	RaLoRA (Ours)	LLaMA-3.1-8B-Base			48.78		8		
+ralora-pro	yeGradientIntrinsicDimensionality2025	RaLoRA-Pro (Ours)	LLaMA-3.1-8B-Base	MTBench		6.72		8		
+ralora-pro	yeGradientIntrinsicDimensionality2025	RaLoRA-Pro (Ours)	LLaMA-3.1-8B-Base	GSM8k		73.01		8		
+ralora-pro	yeGradientIntrinsicDimensionality2025	RaLoRA-Pro (Ours)	LLaMA-3.1-8B-Base			48.37		8		
 other-full-ft	shinwariARDLoRADynamicRank2025	Full Fine-tuning	LLAMA-3.1-70B			71.2	70000000000		1.0	MMLU
 other-full-ft	shinwariARDLoRADynamicRank2025	Full Fine-tuning	LLAMA-3.1-70B			68.4	70000000000		1.0	BBH
 other-full-ft	shinwariARDLoRADynamicRank2025	Full Fine-tuning	LLAMA-3.1-70B	GSM8k		82.3	70000000000		1.0	GSM8K
@@ -2310,15 +2310,15 @@ increlora	veprikovWeightLoRAKeepOnly2025	IncreLoRA [Zhang et al., 2023a]	DeBERTa
 increlora	veprikovWeightLoRAKeepOnly2025	IncreLoRA [Zhang et al., 2023a]	DeBERTaV3-base			0.7426	589000		0.0032	
 increlora	veprikovWeightLoRAKeepOnly2025	IncreLoRA [Zhang et al., 2023a]	DeBERTaV3-base			0.7598	589000		0.0032	
 increlora	veprikovWeightLoRAKeepOnly2025	IncreLoRA [Zhang et al., 2023a]	DeBERTaV3-base			0.8435	589000		0.0032	
-eva	veprikovWeightLoRAKeepOnly2025	Dynamic LoRA [Mao et al., 2024]	DeBERTaV3-base			0.8545	626000		0.0034	
-eva	veprikovWeightLoRAKeepOnly2025	Dynamic LoRA [Mao et al., 2024]	DeBERTaV3-base	SST-2		0.9258	626000		0.0034	
-eva	veprikovWeightLoRAKeepOnly2025	Dynamic LoRA [Mao et al., 2024]	DeBERTaV3-base	CoLA		0.649	626000		0.0034	
-eva	veprikovWeightLoRAKeepOnly2025	Dynamic LoRA [Mao et al., 2024]	DeBERTaV3-base			0.8961	626000		0.0034	
-eva	veprikovWeightLoRAKeepOnly2025	Dynamic LoRA [Mao et al., 2024]	DeBERTaV3-base			0.8643	626000		0.0034	
-eva	veprikovWeightLoRAKeepOnly2025	Dynamic LoRA [Mao et al., 2024]	DeBERTaV3-base			0.9215	626000		0.0034	
-eva	veprikovWeightLoRAKeepOnly2025	Dynamic LoRA [Mao et al., 2024]	DeBERTaV3-base			0.7315	626000		0.0034	
-eva	veprikovWeightLoRAKeepOnly2025	Dynamic LoRA [Mao et al., 2024]	DeBERTaV3-base			0.8172	626000		0.0034	
-eva	veprikovWeightLoRAKeepOnly2025	Dynamic LoRA [Mao et al., 2024]	DeBERTaV3-base			0.8701	626000		0.0034	
+dora	veprikovWeightLoRAKeepOnly2025	Dynamic LoRA [Mao et al., 2024]	DeBERTaV3-base			0.8545	626000		0.0034	
+dora	veprikovWeightLoRAKeepOnly2025	Dynamic LoRA [Mao et al., 2024]	DeBERTaV3-base	SST-2		0.9258	626000		0.0034	
+dora	veprikovWeightLoRAKeepOnly2025	Dynamic LoRA [Mao et al., 2024]	DeBERTaV3-base	CoLA		0.649	626000		0.0034	
+dora	veprikovWeightLoRAKeepOnly2025	Dynamic LoRA [Mao et al., 2024]	DeBERTaV3-base			0.8961	626000		0.0034	
+dora	veprikovWeightLoRAKeepOnly2025	Dynamic LoRA [Mao et al., 2024]	DeBERTaV3-base			0.8643	626000		0.0034	
+dora	veprikovWeightLoRAKeepOnly2025	Dynamic LoRA [Mao et al., 2024]	DeBERTaV3-base			0.9215	626000		0.0034	
+dora	veprikovWeightLoRAKeepOnly2025	Dynamic LoRA [Mao et al., 2024]	DeBERTaV3-base			0.7315	626000		0.0034	
+dora	veprikovWeightLoRAKeepOnly2025	Dynamic LoRA [Mao et al., 2024]	DeBERTaV3-base			0.8172	626000		0.0034	
+dora	veprikovWeightLoRAKeepOnly2025	Dynamic LoRA [Mao et al., 2024]	DeBERTaV3-base			0.8701	626000		0.0034	
 lora-drop	veprikovWeightLoRAKeepOnly2025	LoRA-drop [Zhou et al., 2024]	DeBERTaV3-base			0.7659	221000		0.0012	
 lora-drop	veprikovWeightLoRAKeepOnly2025	LoRA-drop [Zhou et al., 2024]	DeBERTaV3-base	SST-2		0.9358	221000		0.0012	
 lora-drop	veprikovWeightLoRAKeepOnly2025	LoRA-drop [Zhou et al., 2024]	DeBERTaV3-base	CoLA		0.5903	221000		0.0012	

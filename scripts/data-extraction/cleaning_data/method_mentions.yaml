@@ -293,7 +293,7 @@
   - changElaLoRAElasticLearnable2025
   - guLaLoRAParameterefficientFinetuning2026
   - shinwariARDLoRADynamicRank2025
-- id: eva
+- id: dora
   mention: Dynamic LoRA [Mao et al., 2024]
   papers:
   - veprikovWeightLoRAKeepOnly2025
@@ -1095,19 +1095,19 @@
   mention: RaLo
   papers:
   - dengRaLoRankawareLowrank2026
-- id: ra-lora
+- id: ralora-pro
   mention: RaLoRA
   papers:
   - yeGradientIntrinsicDimensionality2025
-- id: ra-lora
+- id: ralora-pro
   mention: RaLoRA (Ours)
   papers:
   - yeGradientIntrinsicDimensionality2025
-- id: ra-lora
+- id: ralora-pro
   mention: RaLoRA-Pro
   papers:
   - yeGradientIntrinsicDimensionality2025
-- id: ra-lora
+- id: ralora-pro
   mention: RaLoRA-Pro (Ours)
   papers:
   - yeGradientIntrinsicDimensionality2025
