@@ -3,3 +3,4 @@ __pycache__
 data/tables
 data/extracted_scores
 data/tables_index.json
+.env

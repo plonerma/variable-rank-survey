@@ -6,6 +6,9 @@
 #     "python-slugify",
 # ]
 # ///
+from typing import TextIO
+from collections.abc import Iterator
+import csv
 import argparse
 import json
 from pathlib import Path
@@ -19,6 +22,8 @@ from slugify import slugify
 PAPERS_PATH = "data/papers.json"
 METHODS_PATH = "data/methods.json"
 GROUP_CONFIG_PATH = "data/group-config.yaml"
+CITATIONS_PATH = "data/citations.tsv"
+EVALUATIONS_PATH = "data/evaluation_results.tsv"
 CSL_STYLE = "./association-for-computational-linguistics.csl"
 
 
@@ -42,6 +47,20 @@ def render_method_details(site, template, **kw):
 
         print("Writing", method["id"], "to", out)
         template.stream(method=method, **kw).dump(str(out), encoding="utf-8")
+
+
+def read_tsv_columns(f: TextIO, *columns: str, dialect: str="excel-tab") -> Iterator[tuple[str, ...]]:
+    """DictReader (excel-tab) yielding the given columns as tuples.
+
+    Raises ValueError on first iteration if required columns are missing.
+    """
+    reader = csv.DictReader(f, dialect=dialect)
+    missing = [c for c in columns if c not in (reader.fieldnames or [])]
+    if missing:
+        raise ValueError(f"{f.name}: missing column(s) {missing}; found {reader.fieldnames}")
+
+    for row in reader:
+        yield tuple(row[c] for c in columns)
 
 
 def load_survey_data(metadata):
@@ -68,7 +87,11 @@ def load_survey_data(metadata):
 
         paper["url"] = f"{metadata['url']}papers/{paper['id'].lower()}.html"
         paper["year"] = paper["issued"]["date-parts"][0][0]
-        paper["methods"] = []
+        paper["proposed_methods"] = []
+        paper["evaluated_methods"] = []
+        paper["cited_papers"] = []
+        paper["cited_by_papers"] = []
+        paper["evaluated_tasks"] = []
         
     papers = {paper["id"]: paper for paper in papers}
 
@@ -79,14 +102,41 @@ def load_survey_data(metadata):
     for method in methods:
         method["url"] = f"{metadata['url']}methods/{method['id']}.html"
         method["paper"] = papers[method["paper-id"]]
-        papers[method["paper-id"]]["methods"].append(method)
+        papers[method["paper-id"]]["proposed_methods"].append(method)
 
         group_config["groups"][method["type-path"]]["methods"].append(method)
         method["group"] = group_config["groups"][method["type-path"]]
 
+        method["evaluated_in"] = []
+
+    methods = {method["id"]: method for method in methods}
+
+    with open(EVALUATIONS_PATH, encoding="utf-8", newline="") as f:
+        for paper, method, task in read_tsv_columns(f, "paper-id", "method-id", "evaluation_task"):
+            if len(task)>0 and task not in papers[paper]["evaluated_tasks"]:
+                papers[paper]["evaluated_tasks"].append(task)
+
+            if method.startswith("other-"):
+                # Common method, not part of surveyed methods
+                continue
+
+            if paper not in methods[method]["evaluated_in"]:
+                methods[method]["evaluated_in"].append(paper) 
+
+            if method not in papers[paper]["evaluated_methods"]:
+                papers[paper]["evaluated_methods"].append(method)
+
+    with open(CITATIONS_PATH, encoding="utf-8", newline="") as f:
+        for citing, cited in read_tsv_columns(f, "citing", "cited"):
+            if citing not in papers[cited]["cited_by_papers"]:
+                papers[cited]["cited_by_papers"].append(citing)
+
+            if cited not in papers[citing]["cited_papers"]:
+                papers[citing]["cited_papers"].append(cited)
+
     return {
         "papers": papers,
-        "methods": {method["id"]: method for method in methods},
+        "methods": methods,
         "group_config": group_config,
     }
 

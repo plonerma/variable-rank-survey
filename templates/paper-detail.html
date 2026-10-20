@@ -46,8 +46,8 @@
         {% endif %}
         <tr>
           <th scope="row">Methods</th>
-          <td class="has-text-centered method-cell">
-            {% for method in paper.methods %}
+          <td class="has-text-centered list-cell">
+            {% for method in paper.proposed_methods %}
               <a href="{{method.url}}">{{method.name}}</a>
             {% endfor %}
           </td>
@@ -56,7 +56,48 @@
           <th scope="row">Abstract</th>
           <td><p class="has-text-weight-light has-text-justified">{{ paper.abstract }}</p></td>
         </tr>
+        <tr>
+          <th scope="row">Evaluated Methods<sup><a href="#maybe-incomplete">*</a></sup></th>
+          <td>
+            <ul>
+              {% for method in paper.evaluated_methods %}{% set method=survey_data.methods[method] %}
+              <li><a href="{{method.url}}">{{method.name}}</a></li>
+              {% endfor %}
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Cited Papers<sup><a href="#maybe-incomplete">*</a></sup></th>
+          <td>
+            <ul>
+              {% for p in paper.cited_papers %}{% set p=survey_data.papers[p] %}
+              <li><a href="{{p.url}}">{{p.title}}</a></li>
+              {% endfor %}
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Cited By<sup><a href="#maybe-incomplete">*</a></sup></th>
+          <td>
+            <ul>
+              {% for p in paper.cited_by_papers %}{% set p=survey_data.papers[p] %}
+              <li><a href="{{p.url}}">{{p.title}}</a></li>
+              {% endfor %}
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Used Evaluation Tasks<sup><a href="#maybe-incomplete">*</a></sup></th>
+          <td>
+            <ul>
+              {% for task in paper.evaluated_tasks %}
+              <li>{{task}}</li>
+              {% endfor %}
+            </ul>
+          </td>
+        </tr>
       </table>
+      <ul><li class="footnote" id="maybe-incomplete"><sup>*</sup><i>Data may be incomplete. If you find an error, please <a href="https://github.com/plonerma/variable-rank-survey/issues" target="_blank">raise an issue</a>.</i></li></ul>
     </div>
   </div>
 </section>
@@ -68,11 +109,19 @@ table.paper-details th {
   font-size: 0.9em;
 }
 
-table.paper-details td.method-cell a:not(:last-child)::after {
+table.paper-details td.list-cell a:not(:last-child)::after {
   content: ", ";
 }
 
+table tr ul li {
+  display: list-item;
+  list-style-type: "-";
+  padding-inline-start: 1ch;
 
+  &::marker {
+    font-weight: lighter;
+  }
+}
 </style>
 
 {% endblock %}

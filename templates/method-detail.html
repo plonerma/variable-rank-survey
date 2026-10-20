@@ -46,7 +46,18 @@
           <td class="has-text-centered">{{ method.comment }}</td>
         </tr>
         {% endif %}
+        <tr>
+          <th scope="row">Evaluated In<sup><a href="#maybe-incomplete">*</a></sup></th>
+          <td>
+            <ul>
+              {% for p in method.evaluated_in %}{% set p=survey_data.papers[p] %}
+              <li><a href="{{p.url}}">{{p.title}}</a></li>
+              {% endfor %}
+            </ul>
+          </td>
+        </tr>
       </table>
+      <ul><li class="footnote" id="maybe-incomplete"><sup>*</sup><i>Data may be incomplete. If you find an error, please <a href="https://github.com/plonerma/variable-rank-survey/issues" target="_blank">raise an issue</a>.</i></li></ul>
     </div>
   </div>
 </section>
@@ -58,6 +69,15 @@ table.method-details th {
   font-size: 0.9em;
 }
 
+table tr ul li {
+  display: list-item;
+  list-style-type: "-";
+  padding-inline-start: 1ch;
+
+  &::marker {
+    font-weight: lighter;
+  }
+}
 </style>
 
 {% endblock %}
