@@ -1,0 +1,62 @@
+invalid:
+  - bert
+  - llama
+  - llama1
+  - llama2
+  - llama3
+  - llama3.1
+  - olmoemodels
+  - phimodels
+  - vicuna
+
+canonical:
+  bartbase: BART-base
+  bartlarge: BART-large
+  bert: BERT
+  bertbasecased: BERT-base (cased)
+  bloomz7b: BLOOMz7B
+  chatgpt: ChatGPT
+  debertav3base: DeBERTaV3-base
+  distilbert: DistilBERT
+  google/gemma2bit: Gemma-2B-it
+  gpt3175b: GPT-3_175B
+  gptj6b: GPT-J-6B
+  llama13b: LLaMA-13B 
+  llama17b: LLaMA-7B
+  llama27b: LLaMA-2-7B
+  llama27bbase: Llama-2-7B-Base
+  llama3.170b: LLAMA-3.1-70B
+  llama3.18b: LLaMA-3.1-8B
+  llama3.18bbase: LLaMA-3.1-8B-Base
+  llama3.18binstruct: Llama3.1-8B-Instruct
+  llama3.21b: LLaMA-3.2-1B
+  llama3.23b: LLaMA-3.2-3B
+  llama38b: LLaMA-3-8B
+  llama65b: LLaMA-65B
+  llama7b: LLaMA-7B
+  metallama/llama27bchat: LLaMA-2-7B-Chat
+  metallama/llama31binstruct: LLaMA-3-1B-Instruct
+  mistral7bv0.3: MISTRAL-7B-v0.3
+  mobilellama1.4b: MobileLLaMA 1.4B
+  mobilellama2.7b: MobileLLaMA 2.7B
+  opt1.3b: OPT-1.3B
+  opt6.7b: OPT-6.7B
+  palm540b: PaLM-540B
+  qwen7b: Qwen-7B
+  qwen1.57b: Qwen-1.5 7B
+  qwen2.53b: Qwen-2.5-3B
+  qwen2.57b: Qwen-2.5-7B
+  qwen30.6b: Qwen-3-0.6B
+  resnet20: ResNet-20
+  resnet32: ResNet-32
+  robertabase: RoBERTa-base
+  robertalarge: RoBERTa-large
+  runwayml/stablediffusionv15: stable-diffusion-v1-5
+  smolvla: SmolVLA
+  t5base: T5-base
+  vicuna13b: Vicuna-13B
+  vicuna7b: Vicuna-7B
+  vitb/16: ViT-B16
+  vitb16: ViT-B16
+  vitbasepatch16224: ViT-B16
+  π₀: π₀

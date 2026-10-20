@@ -1,0 +1,31 @@
+invalid:
+  - accuracy/F1-score
+
+
+bound-0-1:
+  - "Accuracy"
+  - "Matthews correlation coefficient"
+  - "Pearson correlation coefficient"
+  - "F1-score"
+  - ROUGE-1
+  - ROUGE-2
+  - ROUGE-L
+
+canonical:
+  accuracy: Accuracy
+  Acc: Accuracy
+  ACC: Accuracy
+
+  "matthews correlation coefficient": "Matthews correlation coefficient"
+  "matthews": "Matthews correlation coefficient"
+
+  "pearson correlation coefficient": "Pearson correlation coefficient"
+  "Pearson": "Pearson correlation coefficient"
+
+  f1: "F1-score"
+  F1: "F1-score"
+  f1-score: "F1-score"
+
+  R-1: ROUGE-1
+  R-2: ROUGE-2
+  R-L: ROUGE-L

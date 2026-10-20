@@ -1,0 +1,1336 @@
+- id: ''
+  mention: (IA)³
+  papers:
+  - zhaoShapLoRAAllocationLowrank2026
+- id: ''
+  mention: + fine-tuning
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: ars
+  mention: + fine-tuning (ours)
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: ''
+  mention: '-'
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+- id: alora
+  mention: ALoRA
+  papers:
+  - liuALoRAAllocatingLowRank2024
+- id: alora
+  mention: ALoRA [Liu et al., 2024b]
+  papers:
+  - veprikovWeightLoRAKeepOnly2025
+- id: ''
+  mention: AMQ+AL
+  papers:
+  - zhouAutoQRAJointOptimization2026
+- id: ''
+  mention: AMQ+L
+  papers:
+  - zhouAutoQRAJointOptimization2026
+- id: ard-lora
+  mention: ARD-LoRA (adaptive rank)
+  papers:
+  - shinwariARDLoRADynamicRank2025
+- id: ard-lora
+  mention: ARD-LoRA (uniform r=16)
+  papers:
+  - shinwariARDLoRADynamicRank2025
+- id: aroma
+  mention: AROMA
+  papers:
+  - shengAROMAAutonomousRankone2025
+- id: adalora
+  mention: AdaLoRA
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+  - yuPrunedLoRARobustGradientBased2025
+  - keUnveilingLoRAIntrinsic2024
+  - maoDoRAEnhancingParameterEfficient2024
+  - kimAdaptiveCapacityAllocation2026
+  - liuALoRAAllocatingLowRank2024
+  - singhL1RADynamicRank2025
+  - ed-dibGeLoRAGeometricAdaptive2025
+  - zhangAutoLoRAAutomaticallyTuning2024
+  - benedekPRILoRAPrunedRankIncreasing2024
+  - shengAROMAAutonomousRankone2025
+  - zhangSensitivityLoRALowLoadSensitivityBased2025
+  - zhangAdaLoRAAdaptiveBudget2023
+  - dengRaLoRankawareLowrank2026
+  - paischerParameterEfficientFinetuning2025
+  - jiangDiffoRAEnablingParameterEfficient2025
+  - chenBayesianInterpretationAdaptive2025
+  - tianFanLoRAFantasticLoRAs2024
+  - zhouAutoQRAJointOptimization2026
+  - zhangIncreLoRAIncrementalParameter2023
+  - schotthoferGeoLoRAGeometricIntegration2025
+  - zhaoShapLoRAAllocationLowrank2026
+  - maoSeLoRASelfexpandingLoRA2026
+  - zhouLaRALayerwiseRank2026
+  - changElaLoRAElasticLearnable2025
+  - huStructureAwareLowRankAdaptation2023
+  - dingSparseLowrankAdaptation2023
+  - guLaLoRAParameterefficientFinetuning2026
+  - heGoRAGradientdrivenAdaptive2025
+  - shinwariARDLoRADynamicRank2025
+- id: adalora
+  mention: AdaLoRA (Zhang et al., 2023b)
+  papers:
+  - yeGradientIntrinsicDimensionality2025
+- id: adalora
+  mention: AdaLoRA [48]
+  papers:
+  - heGoRAGradientdrivenAdaptive2025
+- id: adalora
+  mention: AdaLoRA [Zhang et al., 2023b]
+  papers:
+  - veprikovWeightLoRAKeepOnly2025
+- id: adalora
+  mention: AdaLoRA, matched
+  papers:
+  - schotthoferGeoLoRAGeometricIntegration2025
+- id: adalora
+  mention: AdaLoRA_{r=32}
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+- id: adalora
+  mention: AdaLoRA_{r=8}
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+- id: adarank
+  mention: AdaRANK (OURS)
+  papers:
+  - dongAdaRankDisagreementBased2024
+- id: adalora
+  mention: AdalLoRA
+  papers:
+  - zhouLaRALayerwiseRank2026
+- id: other-adapter
+  mention: Adapt^H
+  papers:
+  - huStructureAwareLowRankAdaptation2023
+- id: other-adapter
+  mention: Adapt^P
+  papers:
+  - huStructureAwareLowRankAdaptation2023
+- id: other-adapter
+  mention: Adapter
+  papers:
+  - keUnveilingLoRAIntrinsic2024
+  - zhangAutoLoRAAutomaticallyTuning2024
+  - guSARASingularValueBased2024
+  - guLightPEFTLighteningParameterEfficient2024
+  - dingSparseLowrankAdaptation2023
+- id: other-adapter
+  mention: Adapter [7]
+  papers:
+  - zhangLowRankTuningModel2025
+- id: other-adapter
+  mention: Adapter-H
+  papers:
+  - dengRaLoRankawareLowrank2026
+- id: ''
+  mention: AdapterDrop
+  papers:
+  - liuALoRAAllocatingLowRank2024
+- id: ''
+  mention: AdapterFusion
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+  - keUnveilingLoRAIntrinsic2024
+- id: other-adapter
+  mention: Adapters†
+  papers:
+  - lawtonNeuralArchitectureSearch2023
+- id: other-adapter
+  mention: Adpt^D
+  papers:
+  - guLaLoRAParameterefficientFinetuning2026
+- id: other-adapter
+  mention: Adpt^H
+  papers:
+  - guLaLoRAParameterefficientFinetuning2026
+- id: other-adapter
+  mention: Adpt^P
+  papers:
+  - guLaLoRAParameterefficientFinetuning2026
+- id: other-lora
+  mention: Attn(K-Q-V)
+  papers:
+  - hayouPLoPPreciseLoRA2025
+- id: autolora
+  mention: AutoLoRA
+  papers:
+  - zhangAutoLoRAAutomaticallyTuning2024
+  - zhaoShapLoRAAllocationLowrank2026
+- id: autoqra
+  mention: AutoQRA (Opt)
+  papers:
+  - zhouAutoQRAJointOptimization2026
+- id: autoqra
+  mention: AutoQRA (≤4b)
+  papers:
+  - zhouAutoQRAJointOptimization2026
+- id: other-full-ft
+  mention: BERT-base
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: ''
+  mention: BLIP-2
+  papers:
+  - xiHyDRAHierarchicalDynamic2025
+- id: other-lora
+  mention: Baseline
+  papers:
+  - chenNotAllLoRA2025
+- id: other-bitfit
+  mention: BitFit
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+  - maoDoRAEnhancingParameterEfficient2024
+  - ed-dibGeLoRAGeometricAdaptive2025
+  - benedekPRILoRAPrunedRankIncreasing2024
+  - jiangDiffoRAEnablingParameterEfficient2025
+  - zhangIncreLoRAIncrementalParameter2023
+  - schotthoferGeoLoRAGeometricIntegration2025
+  - zhaoShapLoRAAllocationLowrank2026
+  - changElaLoRAElasticLearnable2025
+  - guLaLoRAParameterefficientFinetuning2026
+  - lawtonNeuralArchitectureSearch2023
+- id: other-bitfit
+  mention: Bitfit
+  papers:
+  - dengRaLoRankawareLowrank2026
+  - dingSparseLowrankAdaptation2023
+- id: other-bitfit
+  mention: Bitfit [21]
+  papers:
+  - zhangLowRankTuningModel2025
+- id: ''
+  mention: CPB
+  papers:
+  - zhangLowRankTuningModel2025
+- id: ''
+  mention: ChatGPT
+  papers:
+  - guSARASingularValueBased2024
+  - munozLoNASElasticLowRank2024
+- id: codyra
+  mention: CoDyRA
+  papers:
+  - luAdaptiveRankReduced2026
+- id: ''
+  mention: CorDA
+  papers:
+  - paischerParameterEfficientFinetuning2025
+- id: ''
+  mention: DiagLoRA
+  papers:
+  - gaoAutomaticRankDetermination2026
+- id: diffora
+  mention: DiffRA
+  papers:
+  - jiangDiffoRAEnablingParameterEfficient2025
+- id: diffora
+  mention: DiffoRA
+  papers:
+  - jiangDiffoRAEnablingParameterEfficient2025
+- id: diffora
+  mention: DiffoRA_LoRA
+  papers:
+  - jiangDiffoRAEnablingParameterEfficient2025
+- id: diffora
+  mention: DiffoRA_LoRA+
+  papers:
+  - jiangDiffoRAEnablingParameterEfficient2025
+- id: other-full-ft
+  mention: DistillBERT
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: other-dora
+  mention: DoRA
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+  - yuPrunedLoRARobustGradientBased2025
+  - keUnveilingLoRAIntrinsic2024
+  - guSARASingularValueBased2024
+  - paischerParameterEfficientFinetuning2025
+  - zhaoShapLoRAAllocationLowrank2026
+  - guLaLoRAParameterefficientFinetuning2026
+  - heGoRAGradientdrivenAdaptive2025
+- id: dora
+  mention: DoRA
+  papers:
+  - maoDoRAEnhancingParameterEfficient2024
+  - schotthoferGeoLoRAGeometricIntegration2025
+  - changElaLoRAElasticLearnable2025
+  - shinwariARDLoRADynamicRank2025
+- id: other-dora
+  mention: DoRA (Liu et al., 2024a)
+  papers:
+  - yeGradientIntrinsicDimensionality2025
+- id: ''
+  mention: DoRA [25]
+  papers:
+  - heGoRAGradientdrivenAdaptive2025
+- id: drop-lora
+  mention: Drop-LoRA
+  papers:
+  - chenNotAllLoRA2025
+- id: ''
+  mention: DualPrompt
+  papers:
+  - luAdaptiveRankReduced2026
+- id: other-dylora
+  mention: DyLoRA
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+  - zhangLowRankTuningModel2025
+  - zhangSensitivityLoRALowLoadSensitivityBased2025
+  - maoSeLoRASelfexpandingLoRA2026
+  - changElaLoRAElasticLearnable2025
+  - guLaLoRAParameterefficientFinetuning2026
+  - shinwariARDLoRADynamicRank2025
+- id: eva
+  mention: Dynamic LoRA [Mao et al., 2024]
+  papers:
+  - veprikovWeightLoRAKeepOnly2025
+- id: eva
+  mention: EVA
+  papers:
+  - paischerParameterEfficientFinetuning2025
+- id: eva
+  mention: EVA (ρ = 1)
+  papers:
+  - paischerParameterEfficientFinetuning2025
+- id: eva
+  mention: EVA (ρ = 2)
+  papers:
+  - paischerParameterEfficientFinetuning2025
+- id: eva
+  mention: EVA+DoRA
+  papers:
+  - paischerParameterEfficientFinetuning2025
+- id: eva
+  mention: EVA+DoRA (ρ = 1)
+  papers:
+  - paischerParameterEfficientFinetuning2025
+- id: eva
+  mention: EVA+DoRA (ρ = 2)
+  papers:
+  - paischerParameterEfficientFinetuning2025
+- id: ''
+  mention: EWC
+  papers:
+  - luAdaptiveRankReduced2026
+- id: elalora
+  mention: ElaLoRA
+  papers:
+  - changElaLoRAElasticLearnable2025
+- id: ''
+  mention: FFA-LoRA
+  papers:
+  - wuAdaptiveRankAllocation2026
+- id: ''
+  mention: FFA-LoRA-dr
+  papers:
+  - wuAdaptiveRankAllocation2026
+- id: other-full-ft
+  mention: FFT
+  papers:
+  - paischerParameterEfficientFinetuning2025
+  - lawtonNeuralArchitectureSearch2023
+- id: ''
+  mention: FIX(ICL)
+  papers:
+  - luAdaptiveRankReduced2026
+- id: ''
+  mention: FLoRA
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+- id: other-lora
+  mention: FP16 LoRA
+  papers:
+  - kimRALoRARankAdaptiveParameterEfficient2024
+- id: ''
+  mention: FT
+  papers:
+  - huStructureAwareLowRankAdaptation2023
+  - guLaLoRAParameterefficientFinetuning2026
+- id: ''
+  mention: FWSVD
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: ''
+  mention: FWSVD + fine-tuning
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: ''
+  mention: FWSVD+ARS (ours)
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: ''
+  mention: FWSVD+ARS (ours) + fine-tuning
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: fanlora
+  mention: FanLoRA
+  papers:
+  - tianFanLoRAFantasticLoRAs2024
+- id: ''
+  mention: FeDeRA
+  papers:
+  - wuAdaptiveRankAllocation2026
+- id: fedara
+  mention: FedARA
+  papers:
+  - wuAdaptiveRankAllocation2026
+- id: ''
+  mention: FedAdapter-h
+  papers:
+  - wuAdaptiveRankAllocation2026
+- id: ''
+  mention: FedAdapter-p
+  papers:
+  - wuAdaptiveRankAllocation2026
+- id: ''
+  mention: FedLoRA
+  papers:
+  - wuAdaptiveRankAllocation2026
+- id: ''
+  mention: Fine-Tune
+  papers:
+  - dingSparseLowrankAdaptation2023
+- id: ''
+  mention: Fine-tuned
+  papers:
+  - chenNotAllLoRA2025
+- id: flexlora
+  mention: FlexLoRA
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+- id: flexlora
+  mention: FlexLoRA [Wei et al., 2024]
+  papers:
+  - veprikovWeightLoRAKeepOnly2025
+- id: flexlora
+  mention: FlexLoRA_{r=32}
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+- id: flexlora
+  mention: FlexLoRA_{r=8}
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+- id: other-full-ft
+  mention: Full
+  papers:
+  - heGoRAGradientdrivenAdaptive2025
+  - yeGradientIntrinsicDimensionality2025
+- id: other-full-ft
+  mention: Full FT
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+  - yuPrunedLoRARobustGradientBased2025
+  - keUnveilingLoRAIntrinsic2024
+  - maoDoRAEnhancingParameterEfficient2024
+  - kimAdaptiveCapacityAllocation2026
+  - ed-dibGeLoRAGeometricAdaptive2025
+  - zhangAutoLoRAAutomaticallyTuning2024
+  - benedekPRILoRAPrunedRankIncreasing2024
+  - zhangAdaLoRAAdaptiveBudget2023
+  - dengRaLoRankawareLowrank2026
+  - jiangDiffoRAEnablingParameterEfficient2025
+  - zhangIncreLoRAIncrementalParameter2023
+  - schotthoferGeoLoRAGeometricIntegration2025
+  - changElaLoRAElasticLearnable2025
+  - guLaLoRAParameterefficientFinetuning2026
+- id: other-full-ft
+  mention: Full Fine-Tuning
+  papers:
+  - veprikovWeightLoRAKeepOnly2025
+- id: other-full-ft
+  mention: Full Fine-tuning
+  papers:
+  - shinwariARDLoRADynamicRank2025
+- id: other-full-ft
+  mention: Full-FT
+  papers:
+  - zhangLowRankTuningModel2025
+  - tianFanLoRAFantasticLoRAs2024
+  - guLightPEFTLighteningParameterEfficient2024
+  - zhouLoRAdropEfficientLoRA2025
+- id: other-full-ft
+  mention: Full-FT*
+  papers:
+  - zhouLoRAdropEfficientLoRA2025
+- id: ''
+  mention: GEM
+  papers:
+  - luAdaptiveRankReduced2026
+- id: ''
+  mention: GLoRA
+  papers:
+  - zhangLowRankTuningModel2025
+- id: gelora
+  mention: GeLoRA
+  papers:
+  - ed-dibGeLoRAGeometricAdaptive2025
+- id: geolora
+  mention: GeoLoRA
+  papers:
+  - schotthoferGeoLoRAGeometricIntegration2025
+- id: geolora
+  mention: GeoLoRA, global
+  papers:
+  - schotthoferGeoLoRAGeometricIntegration2025
+- id: geolora
+  mention: GeoLoRA, local
+  papers:
+  - schotthoferGeoLoRAGeometricIntegration2025
+- id: gora
+  mention: GoRA
+  papers:
+  - heGoRAGradientdrivenAdaptive2025
+- id: other-adapter
+  mention: H-Adapter
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+  - maoDoRAEnhancingParameterEfficient2024
+  - changElaLoRAElasticLearnable2025
+- id: ''
+  mention: HA Adapter
+  papers:
+  - ed-dibGeLoRAGeometricAdaptive2025
+- id: ''
+  mention: HAAdapter
+  papers:
+  - schotthoferGeoLoRAGeometricIntegration2025
+- id: ''
+  mention: HAdapter
+  papers:
+  - ed-dibGeLoRAGeometricAdaptive2025
+  - benedekPRILoRAPrunedRankIncreasing2024
+  - zhangSensitivityLoRALowLoadSensitivityBased2025
+  - jiangDiffoRAEnablingParameterEfficient2025
+  - zhangIncreLoRAIncrementalParameter2023
+- id: ''
+  mention: HiDeLoRA
+  papers:
+  - luAdaptiveRankReduced2026
+- id: other-adapter
+  mention: Housbly-Adapter
+  papers:
+  - liuALoRAAllocatingLowRank2024
+  - tianFanLoRAFantasticLoRAs2024
+- id: hydra
+  mention: HyDRA(Coarse-grained)
+  papers:
+  - xiHyDRAHierarchicalDynamic2025
+- id: hydra
+  mention: HyDRA(Fine-grained)
+  papers:
+  - xiHyDRAHierarchicalDynamic2025
+- id: ''
+  mention: IAPT
+  papers:
+  - zhaoShapLoRAAllocationLowrank2026
+- id: ''
+  mention: IDEFICS-80B
+  papers:
+  - xiHyDRAHierarchicalDynamic2025
+- id: ''
+  mention: IDEFICS-9B
+  papers:
+  - xiHyDRAHierarchicalDynamic2025
+- id: ''
+  mention: IWSVD
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: ''
+  mention: IWSVD + fine-tuning
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: ''
+  mention: IWSVD+ARS (ours)
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: ''
+  mention: IWSVD+ARS (ours) + fine-tuning
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: increlora
+  mention: IncreLoRA
+  papers:
+  - zhangIncreLoRAIncrementalParameter2023
+  - shinwariARDLoRADynamicRank2025
+- id: increlora
+  mention: IncreLoRA [Zhang et al., 2023a]
+  papers:
+  - veprikovWeightLoRAKeepOnly2025
+- id: ''
+  mention: InstructBLIP
+  papers:
+  - xiHyDRAHierarchicalDynamic2025
+- id: l1ra
+  mention: L1RA
+  papers:
+  - singhL1RADynamicRank2025
+- id: ''
+  mention: L2P
+  papers:
+  - luAdaptiveRankReduced2026
+- id: ''
+  mention: LLM-Pruner
+  papers:
+  - yuPrunedLoRARobustGradientBased2025
+  - gaoAdaptiveRankSelections2024
+- id: ''
+  mention: LLM-Pruner (ag.)
+  papers:
+  - guLightPEFTLighteningParameterEfficient2024
+- id: ''
+  mention: LLM-Pruner (sp.)
+  papers:
+  - guLightPEFTLighteningParameterEfficient2024
+- id: ''
+  mention: LLaMA-7B
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: ''
+  mention: LLaVA-1.5
+  papers:
+  - xiHyDRAHierarchicalDynamic2025
+- id: ''
+  mention: LP
+  papers:
+  - zhangLowRankTuningModel2025
+- id: ''
+  mention: LQ-LoRA
+  papers:
+  - zhouAutoQRAJointOptimization2026
+- id: other-lst
+  mention: LST
+  papers:
+  - liuALoRAAllocatingLowRank2024
+  - guLightPEFTLighteningParameterEfficient2024
+- id: la-lora
+  mention: La-LoRA
+  papers:
+  - guLaLoRAParameterefficientFinetuning2026
+- id: la-lora
+  mention: La-LoRA(ours)
+  papers:
+  - guLaLoRAParameterefficientFinetuning2026
+- id: lara
+  mention: LaRA
+  papers:
+  - zhouLaRALayerwiseRank2026
+- id: ''
+  mention: LayerDrop
+  papers:
+  - guLightPEFTLighteningParameterEfficient2024
+- id: ''
+  mention: Learned-Adapter
+  papers:
+  - liuALoRAAllocatingLowRank2024
+  - tianFanLoRAFantasticLoRAs2024
+  - zhaoShapLoRAAllocationLowrank2026
+- id: ''
+  mention: LieRA
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+- id: ''
+  mention: LinearLoRA
+  papers:
+  - gaoAutomaticRankDetermination2026
+- id: lonas
+  mention: LoNAS-H
+  papers:
+  - munozLoNASElasticLowRank2024
+- id: lonas
+  mention: LoNAS-M
+  papers:
+  - munozLoNASElasticLowRank2024
+- id: other-lora
+  mention: LoRA
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+  - yuPrunedLoRARobustGradientBased2025
+  - keUnveilingLoRAIntrinsic2024
+  - zhouRankAdaptorHierarchicalRank2025
+  - maoDoRAEnhancingParameterEfficient2024
+  - kimAdaptiveCapacityAllocation2026
+  - liuALoRAAllocatingLowRank2024
+  - singhL1RADynamicRank2025
+  - ed-dibGeLoRAGeometricAdaptive2025
+  - zhangAutoLoRAAutomaticallyTuning2024
+  - veprikovWeightLoRAKeepOnly2025
+  - shengAROMAAutonomousRankone2025
+  - guSARASingularValueBased2024
+  - zhangSensitivityLoRALowLoadSensitivityBased2025
+  - munozLoNASElasticLowRank2024
+  - zhangAdaLoRAAdaptiveBudget2023
+  - paischerParameterEfficientFinetuning2025
+  - jiangDiffoRAEnablingParameterEfficient2025
+  - chenBayesianInterpretationAdaptive2025
+  - tianFanLoRAFantasticLoRAs2024
+  - guLightPEFTLighteningParameterEfficient2024
+  - zhouAutoQRAJointOptimization2026
+  - schotthoferGeoLoRAGeometricIntegration2025
+  - zhouLoRAdropEfficientLoRA2025
+  - zhaoShapLoRAAllocationLowrank2026
+  - maoSeLoRASelfexpandingLoRA2026
+  - yaoLayerwiseImportanceMatters2024
+  - kimLotteryRankPruningAdaptation2024
+  - changElaLoRAElasticLearnable2025
+  - huStructureAwareLowRankAdaptation2023
+  - dingSparseLowrankAdaptation2023
+  - guLaLoRAParameterefficientFinetuning2026
+  - heGoRAGradientdrivenAdaptive2025
+  - lawtonNeuralArchitectureSearch2023
+- id: other-lora
+  mention: LoRA (Hu et al., 2022)
+  papers:
+  - yeGradientIntrinsicDimensionality2025
+- id: other-lora
+  mention: LoRA (r=64)
+  papers:
+  - guLightPEFTLighteningParameterEfficient2024
+- id: other-lora
+  mention: LoRA (r=8)
+  papers:
+  - guLightPEFTLighteningParameterEfficient2024
+  - dingSparseLowrankAdaptation2023
+  - shinwariARDLoRADynamicRank2025
+- id: ist
+  mention: LoRA + IST
+  papers:
+  - yaoLayerwiseImportanceMatters2024
+- id: other-lora
+  mention: LoRA [18]
+  papers:
+  - heGoRAGradientdrivenAdaptive2025
+- id: other-lora
+  mention: LoRA [8]
+  papers:
+  - zhangLowRankTuningModel2025
+- id: ''
+  mention: LoRA+
+  papers:
+  - jiangDiffoRAEnablingParameterEfficient2025
+  - schotthoferGeoLoRAGeometricIntegration2025
+  - heGoRAGradientdrivenAdaptive2025
+- id: ''
+  mention: LoRA+ (Hayou et al., 2024)
+  papers:
+  - yeGradientIntrinsicDimensionality2025
+- id: ''
+  mention: LoRA+ [14]
+  papers:
+  - heGoRAGradientdrivenAdaptive2025
+- id: ''
+  mention: LoRA-Dash
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+- id: ''
+  mention: LoRA-FA
+  papers:
+  - guLaLoRAParameterefficientFinetuning2026
+- id: ''
+  mention: LoRA-GA
+  papers:
+  - paischerParameterEfficientFinetuning2025
+  - zhouLaRALayerwiseRank2026
+  - heGoRAGradientdrivenAdaptive2025
+- id: ''
+  mention: LoRA-GA [40]
+  papers:
+  - heGoRAGradientdrivenAdaptive2025
+- id: ''
+  mention: LoRA-MoE (top-1)
+  papers:
+  - kimAdaptiveCapacityAllocation2026
+- id: ''
+  mention: LoRA-MoE (weighted sum)
+  papers:
+  - kimAdaptiveCapacityAllocation2026
+- id: ''
+  mention: LoRA-Pro
+  papers:
+  - zhouLaRALayerwiseRank2026
+- id: ''
+  mention: LoRA-Pro [41]
+  papers:
+  - heGoRAGradientdrivenAdaptive2025
+- id: lora-sp
+  mention: LoRA-SP
+  papers:
+  - kimAdaptiveCapacityAllocation2026
+- id: lora-drop
+  mention: LoRA-drop (ours)
+  papers:
+  - zhouLoRAdropEfficientLoRA2025
+- id: lora-drop
+  mention: LoRA-drop [Zhou et al., 2024]
+  papers:
+  - veprikovWeightLoRAKeepOnly2025
+- id: other-lora
+  mention: LoRA-r256
+  papers:
+  - zhangLowRankTuningModel2025
+- id: other-lora
+  mention: LoRA-r8
+  papers:
+  - zhangLowRankTuningModel2025
+- id: other-lora
+  mention: LoRA_r=16
+  papers:
+  - dengRaLoRankawareLowrank2026
+- id: other-lora
+  mention: LoRA_r=2
+  papers:
+  - zhangIncreLoRAIncrementalParameter2023
+- id: other-lora
+  mention: LoRA_r=4
+  papers:
+  - dengRaLoRankawareLowrank2026
+- id: other-lora
+  mention: LoRA_r=8
+  papers:
+  - benedekPRILoRAPrunedRankIncreasing2024
+  - dengRaLoRankawareLowrank2026
+  - zhangIncreLoRAIncrementalParameter2023
+- id: other-lora
+  mention: LoRA_r=8 [Hu et al., 2021]
+  papers:
+  - veprikovWeightLoRAKeepOnly2025
+- id: other-lora
+  mention: LoRA_{r=32}
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+- id: other-lora
+  mention: LoRA_{r=8}
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+  - zhouLaRALayerwiseRank2026
+- id: ''
+  mention: LoftQ
+  papers:
+  - kimRALoRARankAdaptiveParameterEfficient2024
+  - zhouAutoQRAJointOptimization2026
+- id: ''
+  mention: MELoRA (Ren et al., 2024)
+  papers:
+  - yeGradientIntrinsicDimensionality2025
+- id: ''
+  mention: MELoRA Ren et al. (2024)
+  papers:
+  - yeGradientIntrinsicDimensionality2025
+- id: ''
+  mention: MELoRA [Ren et al., 2024]
+  papers:
+  - veprikovWeightLoRAKeepOnly2025
+- id: ''
+  mention: MLAE
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+- id: other-lora
+  mention: MLP(D-G-U)
+  papers:
+  - hayouPLoPPreciseLoRA2025
+- id: ''
+  mention: MOELoRA
+  papers:
+  - zhaoShapLoRAAllocationLowrank2026
+- id: ''
+  mention: MaM
+  papers:
+  - lawtonNeuralArchitectureSearch2023
+- id: ''
+  mention: MeLoRA
+  papers:
+  - zhangLowRankTuningModel2025
+- id: ''
+  mention: MiLoRA
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+  - paischerParameterEfficientFinetuning2025
+  - guLaLoRAParameterefficientFinetuning2026
+- id: ''
+  mention: MiniGPT-4
+  papers:
+  - xiHyDRAHierarchicalDynamic2025
+- id: ''
+  mention: Mo-SARA
+  papers:
+  - guSARASingularValueBased2024
+- id: ''
+  mention: MoRA
+  papers:
+  - zhangLowRankTuningModel2025
+- id: ''
+  mention: MoRA (Jiang et al., 2024)
+  papers:
+  - yeGradientIntrinsicDimensionality2025
+- id: ''
+  mention: MoSLoRA
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+- id: ''
+  mention: MobileBERT
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: ''
+  mention: MobileVLM 1.7B w/ Full
+  papers:
+  - xiHyDRAHierarchicalDynamic2025
+- id: ''
+  mention: MobileVLM 1.7B w/ LoRA
+  papers:
+  - xiHyDRAHierarchicalDynamic2025
+- id: ''
+  mention: MobileVLM 3B w/ Full
+  papers:
+  - xiHyDRAHierarchicalDynamic2025
+- id: ''
+  mention: MobileVLM 3B w/ LoRA
+  papers:
+  - xiHyDRAHierarchicalDynamic2025
+- id: ''
+  mention: N/A
+  papers:
+  - zhouLaRALayerwiseRank2026
+- id: ''
+  mention: NoRA+
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+- id: ''
+  mention: O-LoRA
+  papers:
+  - luAdaptiveRankReduced2026
+- id: ''
+  mention: OGD
+  papers:
+  - luAdaptiveRankReduced2026
+- id: ''
+  mention: OLoRA
+  papers:
+  - paischerParameterEfficientFinetuning2025
+  - heGoRAGradientdrivenAdaptive2025
+- id: ''
+  mention: OLoRA (Büyükakyüz, 2024)
+  papers:
+  - yeGradientIntrinsicDimensionality2025
+- id: ''
+  mention: Offsite-Tuning
+  papers:
+  - guLightPEFTLighteningParameterEfficient2024
+- id: ''
+  mention: Ours
+  papers:
+  - chenNotAllLoRA2025
+  - guLightPEFTLighteningParameterEfficient2024
+  - kimLotteryRankPruningAdaptation2024
+- id: ''
+  mention: Ours (Adapter)
+  papers:
+  - guLightPEFTLighteningParameterEfficient2024
+- id: ''
+  mention: Ours (LoRA)
+  papers:
+  - guLightPEFTLighteningParameterEfficient2024
+- id: other-adapter
+  mention: P-Adapter
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+  - maoDoRAEnhancingParameterEfficient2024
+  - changElaLoRAElasticLearnable2025
+- id: ''
+  mention: P-tuning v2
+  papers:
+  - liuALoRAAllocatingLowRank2024
+  - zhaoShapLoRAAllocationLowrank2026
+- id: ''
+  mention: PAdapter
+  papers:
+  - ed-dibGeLoRAGeometricAdaptive2025
+  - benedekPRILoRAPrunedRankIncreasing2024
+  - zhangSensitivityLoRALowLoadSensitivityBased2025
+  - jiangDiffoRAEnablingParameterEfficient2025
+  - zhangIncreLoRAIncrementalParameter2023
+  - schotthoferGeoLoRAGeometricIntegration2025
+- id: ''
+  mention: PF Adapter
+  papers:
+  - ed-dibGeLoRAGeometricAdaptive2025
+- id: other-pissa
+  mention: PISSA
+  papers:
+  - guLaLoRAParameterefficientFinetuning2026
+- id: plop
+  mention: PLoP(D-O-V)
+  papers:
+  - hayouPLoPPreciseLoRA2025
+- id: plop
+  mention: PLoP(D-U-V)
+  papers:
+  - hayouPLoPPreciseLoRA2025
+- id: plop
+  mention: PLoP⁻¹(G-K-Q)
+  papers:
+  - hayouPLoPPreciseLoRA2025
+- id: prilora
+  mention: PRILoRA
+  papers:
+  - benedekPRILoRAPrunedRankIncreasing2024
+- id: ''
+  mention: Parallel
+  papers:
+  - guSARASingularValueBased2024
+  - munozLoNASElasticLowRank2024
+  - yaoLayerwiseImportanceMatters2024
+  - guLaLoRAParameterefficientFinetuning2026
+- id: ist
+  mention: Parallel + IST
+  papers:
+  - yaoLayerwiseImportanceMatters2024
+- id: ''
+  mention: Parallel-Adapter
+  papers:
+  - zhaoShapLoRAAllocationLowrank2026
+- id: ''
+  mention: Parallel-Adapters
+  papers:
+  - liuALoRAAllocatingLowRank2024
+- id: ''
+  mention: Partial Fine-tuned
+  papers:
+  - chenNotAllLoRA2025
+- id: other-pissa
+  mention: PiSSA
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+  - paischerParameterEfficientFinetuning2025
+  - heGoRAGradientdrivenAdaptive2025
+- id: other-pissa
+  mention: PiSSA (Meng et al., 2024)
+  papers:
+  - yeGradientIntrinsicDimensionality2025
+- id: other-pissa
+  mention: PiSSA [27]
+  papers:
+  - heGoRAGradientdrivenAdaptive2025
+- id: other-pissa
+  mention: Pissa
+  papers:
+  - zhangLowRankTuningModel2025
+- id: ''
+  mention: Pre-Trained
+  papers:
+  - kimRALoRARankAdaptiveParameterEfficient2024
+- id: ''
+  mention: PreTrain
+  papers:
+  - yuPrunedLoRARobustGradientBased2025
+- id: ''
+  mention: PrecLoRA
+  papers:
+  - liuFlexLoRAEntropyGuidedFlexible2026
+- id: ''
+  mention: Prefix
+  papers:
+  - guSARASingularValueBased2024
+  - munozLoNASElasticLowRank2024
+  - huStructureAwareLowRankAdaptation2023
+  - guLaLoRAParameterefficientFinetuning2026
+- id: ''
+  mention: Prompt
+  papers:
+  - huStructureAwareLowRankAdaptation2023
+- id: ''
+  mention: PrunedLoRA (init r = 128)
+  papers:
+  - yuPrunedLoRARobustGradientBased2025
+- id: ''
+  mention: PrunedLoRA (init r = 256)
+  papers:
+  - yuPrunedLoRARobustGradientBased2025
+- id: ''
+  mention: PrunedLoRA (init r = 512)
+  papers:
+  - yuPrunedLoRARobustGradientBased2025
+- id: ''
+  mention: QA-LoRA
+  papers:
+  - kimRALoRARankAdaptiveParameterEfficient2024
+- id: other-qlora
+  mention: QLoRA
+  papers:
+  - kimRALoRARankAdaptiveParameterEfficient2024
+  - zhouAutoQRAJointOptimization2026
+  - shinwariARDLoRADynamicRank2025
+- id: ''
+  mention: Qwen-VL
+  papers:
+  - xiHyDRAHierarchicalDynamic2025
+- id: ra-lora
+  mention: RA-LoRA
+  papers:
+  - kimRALoRARankAdaptiveParameterEfficient2024
+- id: ''
+  mention: RSLoRA
+  papers:
+  - heGoRAGradientdrivenAdaptive2025
+- id: ''
+  mention: RSLoRA (Kalajdzievski, 2023)
+  papers:
+  - yeGradientIntrinsicDimensionality2025
+- id: ''
+  mention: RSLoRA [20]
+  papers:
+  - heGoRAGradientdrivenAdaptive2025
+- id: ralo
+  mention: RaLo
+  papers:
+  - dengRaLoRankawareLowrank2026
+- id: ra-lora
+  mention: RaLoRA
+  papers:
+  - yeGradientIntrinsicDimensionality2025
+- id: ra-lora
+  mention: RaLoRA (Ours)
+  papers:
+  - yeGradientIntrinsicDimensionality2025
+- id: ra-lora
+  mention: RaLoRA-Pro
+  papers:
+  - yeGradientIntrinsicDimensionality2025
+- id: ra-lora
+  mention: RaLoRA-Pro (Ours)
+  papers:
+  - yeGradientIntrinsicDimensionality2025
+- id: ''
+  mention: RandLoRA
+  papers:
+  - guLaLoRAParameterefficientFinetuning2026
+- id: ''
+  mention: RankAdaptor
+  papers:
+  - zhouRankAdaptorHierarchicalRank2025
+- id: other-bitfit
+  mention: S-BitFit
+  papers:
+  - lawtonNeuralArchitectureSearch2023
+- id: ''
+  mention: S-MaM
+  papers:
+  - lawtonNeuralArchitectureSearch2023
+- id: sara
+  mention: SARA
+  papers:
+  - guSARASingularValueBased2024
+- id: ''
+  mention: SLoRA
+  papers:
+  - wuAdaptiveRankAllocation2026
+- id: ''
+  mention: SPT
+  papers:
+  - liuALoRAAllocatingLowRank2024
+- id: sr-lora
+  mention: SR-LoRA
+  papers:
+  - zhangLowRankTuningModel2025
+- id: ''
+  mention: SSF [13]
+  papers:
+  - zhangLowRankTuningModel2025
+- id: ''
+  mention: SSP
+  papers:
+  - liuALoRAAllocatingLowRank2024
+  - tianFanLoRAFantasticLoRAs2024
+  - zhaoShapLoRAAllocationLowrank2026
+- id: ''
+  mention: SVD
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: ''
+  mention: SVD + fine-tuning
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: ''
+  mention: SVD+ARS (ours)
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: ''
+  mention: SVD+ARS (ours) + fine-tuning
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: salora
+  mention: SaLoRA
+  papers:
+  - liuALoRAAllocatingLowRank2024
+  - huStructureAwareLowRankAdaptation2023
+- id: salientlora
+  mention: SalientLoRA
+  papers:
+  - keUnveilingLoRAIntrinsic2024
+- id: ''
+  mention: Scratch
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: selora
+  mention: SeLoRA
+  papers:
+  - maoSeLoRASelfexpandingLoRA2026
+- id: sensitivity-lora
+  mention: Sensitivity-LoRA
+  papers:
+  - zhangSensitivityLoRALowLoadSensitivityBased2025
+- id: sensitivity-lora
+  mention: Sensitivity-LoRA (ours)
+  papers:
+  - zhangSensitivityLoRALowLoadSensitivityBased2025
+- id: ''
+  mention: SeqLoRA
+  papers:
+  - luAdaptiveRankReduced2026
+- id: ''
+  mention: Series
+  papers:
+  - munozLoNASElasticLowRank2024
+  - yaoLayerwiseImportanceMatters2024
+  - guLaLoRAParameterefficientFinetuning2026
+- id: ist
+  mention: Series + IST
+  papers:
+  - yaoLayerwiseImportanceMatters2024
+- id: shaplora
+  mention: ShapLoRA
+  papers:
+  - zhaoShapLoRAAllocationLowrank2026
+- id: sora
+  mention: SoRA
+  papers:
+  - keUnveilingLoRAIntrinsic2024
+  - liuALoRAAllocatingLowRank2024
+  - ed-dibGeLoRAGeometricAdaptive2025
+  - dengRaLoRankawareLowrank2026
+  - zhouLoRAdropEfficientLoRA2025
+  - dingSparseLowrankAdaptation2023
+- id: ''
+  mention: Sparse Adapter
+  papers:
+  - zhouLoRAdropEfficientLoRA2025
+- id: ''
+  mention: SparseGPT
+  papers:
+  - yuPrunedLoRARobustGradientBased2025
+- id: sublora
+  mention: SubLoRA-G
+  papers:
+  - gaoAutomaticRankDetermination2026
+- id: sublora
+  mention: SubLoRA-R
+  papers:
+  - gaoAutomaticRankDetermination2026
+- id: ''
+  mention: Tied-LoRA
+  papers:
+  - zhouLoRAdropEfficientLoRA2025
+- id: ''
+  mention: TreeLoRA
+  papers:
+  - luAdaptiveRankReduced2026
+- id: bitfit
+  mention: U-BitFit
+  papers:
+  - lawtonNeuralArchitectureSearch2023
+- id: ''
+  mention: U-MaM
+  papers:
+  - lawtonNeuralArchitectureSearch2023
+- id: other-lora
+  mention: UNIFORM
+  papers:
+  - dongAdaRankDisagreementBased2024
+- id: ''
+  mention: VPT [10]
+  papers:
+  - zhangLowRankTuningModel2025
+- id: other-lora
+  mention: VeRA
+  papers:
+  - zhouLoRAdropEfficientLoRA2025
+- id: ''
+  mention: WARP†
+  papers:
+  - lawtonNeuralArchitectureSearch2023
+- id: ''
+  mention: WARP⁺
+  papers:
+  - lawtonNeuralArchitectureSearch2023
+- id: weightlora
+  mention: WLoRA
+  papers:
+  - veprikovWeightLoRAKeepOnly2025
+- id: weightloraplus
+  mention: WLoRA+
+  papers:
+  - veprikovWeightLoRAKeepOnly2025
+- id: weightlora
+  mention: WLoRA_k=100
+  papers:
+  - veprikovWeightLoRAKeepOnly2025
+- id: weightlora
+  mention: WLoRA_r=8,k=1
+  papers:
+  - veprikovWeightLoRAKeepOnly2025
+- id: weightlora
+  mention: WLoRA_r=8,k=10
+  papers:
+  - veprikovWeightLoRAKeepOnly2025
+- id: weightlora
+  mention: WLoRA_r=8,k=5
+  papers:
+  - veprikovWeightLoRAKeepOnly2025
+- id: weightlora
+  mention: WLoRAk=20
+  papers:
+  - veprikovWeightLoRAKeepOnly2025
+- id: ''
+  mention: WSVD
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: ars
+  mention: WSVD+ARS
+  papers:
+  - gaoAdaptiveRankSelections2024
+- id: ''
+  mention: Zero-shot
+  papers:
+  - heGoRAGradientdrivenAdaptive2025
+  - yeGradientIntrinsicDimensionality2025
+- id: ''
+  mention: all
+  papers:
+  - hayouPLoPPreciseLoRA2025
+- id: lorpa
+  mention: ours
+  papers:
+  - kimLotteryRankPruningAdaptation2024
+- id: ''
+  mention: w/o Tuning
+  papers:
+  - zhouLaRALayerwiseRank2026
+- id: ''
+  mention: zero shot
+  papers:
+  - shengAROMAAutonomousRankone2025
+- id: ''
+  mention: zero-shot
+  papers:
+  - guLaLoRAParameterefficientFinetuning2026

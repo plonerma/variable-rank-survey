@@ -1,0 +1,29 @@
+invalid:
+  - average
+  - avg.
+  - all
+
+
+canonical:
+  arcc: ARC-c
+  arce: ARC-e
+  agnews: AG News
+  cifar100: Cifar 100
+  "cnn/dm": "CNN/DailyMail"
+  "cola": "CoLA"
+  colamathew: "CoLA"
+
+  gsm8k: GSM8k
+
+  hellas: HellaSwag
+  mtbench: MTBench
+
+  obqa: OpenBookQA
+  openbookqa: OpenBookQA
+
+  sst2: SST-2
+
+  winog: WinoGrande
+  winogrande: WinoGrande
+
+  xsum: XSum
