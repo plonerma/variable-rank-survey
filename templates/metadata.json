@@ -57,17 +57,16 @@
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "ScholarlyArticle",
-      "@id": "https://https://aclanthology.org/PAPER",
-      "url": "https://https://aclanthology.org/PAPER",
+      "@id": "https://aclanthology.org/2026.findings-emnlp.2430/",
+      "url": "https://aclanthology.org/2026.findings-emnlp.2430/",
       "publisher": {
         "@type": "Organization",
         "name": "Association for Computational Linguistics"
       },
       "datePublished": "2026",
-      "sameAs": "<DOI url>",
       "inLanguage": "en",
       "abstract": "The capacity of Low-Rank Adaptation (LoRA) is fundamentally governed by its rank parameter. While standard implementations apply a uniform rank across all layers, a recent wave of variable-rank extensions demonstrates that tailoring ranks to module importance improves expressiveness. However, this emerging literature remains highly fragmented and lacks systematic cross-comparisons. To unify the field, we propose a taxonomy grouping these approaches into four categories: Rank growth, pruning, redistribution, and pre-allocation. We analyze their design dimensions, theoretical expressiveness, implementation complexity, and memory efficiency. Finally, we outline critical challenges inhibiting adoption, including standardized evaluations and memory metrics.",
-      "citation": "BIBTEX_CITATION_HERE",
+      "citation": "inproceedings{ploner-akbik-2026-variable,\n    title = \"Variable-Rank Adaptation: A Comprehensive Survey of Rank Budgeting {L}o{RA} Variants\",\n    author = \"Ploner, Max  and\n      Akbik, Alan\",\n    editor = \"Lee, Hung-Yi  and\n      Dev, Sunipa  and\n      Li, Jessy  and\n      Elliott, Desmond\",\n    booktitle = \"Findings of the {A}ssociation for {C}omputational {L}inguistics: {EMNLP} 2026\",\n    month = oct,\n    year = \"2026\",\n    address = \"Budapest, Hungary\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2026.findings-emnlp.2430/\",\n    pages = \"52150--52172\",\n    ISBN = \"979-8-89176-462-0\",\n    abstract = \"The capacity of Low-Rank Adaptation (LoRA) is fundamentally governed by its rank parameter. While standard implementations apply a uniform rank across all layers, a recent wave of variable-rank extensions demonstrates that tailoring ranks to module importance improves expressiveness. However, this emerging literature remains highly fragmented and lacks systematic cross-comparisons. To unify the field, we propose a taxonomy grouping these approaches into four categories: Rank growth, pruning, redistribution, and pre-allocation. We analyze their design dimensions, theoretical expressiveness, implementation complexity, and memory efficiency. Finally, we outline critical challenges inhibiting adoption, including standardized evaluations and memory metrics.\"\n}",
       "description": "This work presents a taxonomy of variable-rank LoRA methods, categorizing them into rank pruning, growth, redistribution, and pre-allocation based on common design dimensions. It also discusses their theoretical and practical characteristics while identifying key barriers to broader adoption, particularly the lack of standardized evaluations and consistent memory metrics.",
       "name": "Variable-Rank Adaptation: A Comprehensive Survey of Rank Budgeting LoRA Variants",
       "author": [
